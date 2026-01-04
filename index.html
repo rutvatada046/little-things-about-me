@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How Well Do You Know Me?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>How Well Do You Know Me?</h1>
+    <p class="subtitle">A soft little quiz about my favourites ✨</p>
+
+    <form id="quizForm">
+
+        <div class="question-card" data-answer="lavender">
+            <h3>My favourite color is</h3>
+            <label><input type="radio" name="q1" value="lavender"> Lavender</label>
+            <label><input type="radio" name="q1" value="light pink"> Light Pink</label>
+            <label><input type="radio" name="q1" value="off white"> Off White</label>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question-card" data-answer="kadhi jeera rice">
+            <h3>My favourite food is</h3>
+            <label><input type="radio" name="q2" value="pizza"> Pizza</label>
+            <label><input type="radio" name="q2" value="roti sabji"> Roti Sabji</label>
+            <label><input type="radio" name="q2" value="kadhi jeera rice"> Kadhi & Jeera Rice</label>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question-card" data-answer="sketching">
+            <h3>My hobby is</h3>
+            <label><input type="radio" name="q3" value="listening music"> Listening Music</label>
+            <label><input type="radio" name="q3" value="sketching"> Sketching</label>
+            <label><input type="radio" name="q3" value="dancing"> Dancing</label>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question-card" data-answer="sunflower">
+            <h3>Which flower I like the most</h3>
+            <label><input type="radio" name="q4" value="roses"> Roses</label>
+            <label><input type="radio" name="q4" value="lily"> Lily</label>
+            <label><input type="radio" name="q4" value="sunflower"> Sunflower</label>
+            <div class="feedback"></div>
+        </div>
+
+        <button type="button" onclick="checkQuiz()">✨ Submit Quiz</button>
+    </form>
+
+    <div id="finalScore"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
